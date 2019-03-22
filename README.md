@@ -68,7 +68,7 @@ frame 3` from the drop-down menu (Figure \[fig:BEAUti\_split\]).
 
 <figure>
 	<a name="fig:BEAUti\_split"></a>
-	<img style="width:80.0%;" src="BEAUti_split.png" alt="">
+	<img style="width:80.0%;" src="figures//BEAUti_split.png" alt="">
 	<figcaption>Figure 1: Split the alignment</figcaption>
 </figure>
 <br>
@@ -275,7 +275,7 @@ chain.
 
 <figure>
 	<a name="fig:Tracer1"></a>
-	<img style="width:80.0%;" src="Tracer1.png" alt="">
+	<img style="width:80.0%;" src="figures/Tracer1.png" alt="">
 	<figcaption>Figure 10: A screenshot of Tracer.</figcaption>
 </figure>
 <br>
@@ -356,7 +356,7 @@ in Figtree (Figure \[fig:RSV2tree\]).
 
 <figure>
 	<a name="fig:RSV2tree"></a>
-	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.png" alt="">
+	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.pdf" alt="">
 	<figcaption>Figure 14: The Maximum clade credibility tree for the G gene of 129 RSVA-2 viral samples.</figcaption>
 </figure>
 <br>
@@ -366,7 +366,7 @@ canal tree represents maximum clade credibility tree.
 
 <figure>
 	<a name="fig:RSV2tree"></a>
-	<img style="width:80.0%;" src="figures/DensiTree.png" alt="">
+	<img style="width:80.0%;" src="figures/DensiTree.pdf" alt="">
 	<figcaption>Figure 15: The posterior tree set visualised in DensiTree.</figcaption>
 </figure>
 <br>
@@ -405,7 +405,7 @@ number of changes, so it could be used as an alternative tree prior.
 
 <figure>
 	<a name="fig:BEAUti\_init"></a>
-	<img style="width:80.0%;" src="BEAUti_init.png" alt="">
+	<img style="width:80.0%;" src="figures/BEAUti_init.png" alt="">
 	<figcaption>Figure 17: Initialization panel</figcaption>
 </figure>
 <br>
@@ -420,7 +420,7 @@ the menu Analysis/Bayesian Skyline Reconstruction.
 <figure>
 	<a name="fig:tracerBSP1"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP1.png" alt="">
-	<figcaption>Figure 18: Bayesian Skyline Reconstruction</figcaption>
+	<figcaption>Figure 18: Bayesian Skyline Reconstruction in BEAUti</figcaption>
 </figure>
 <br>
 
@@ -431,7 +431,7 @@ entry for age of youngest tip to 2002.
 <figure>
 	<a name="fig:tracerBSP2"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP2.png" alt="">
-	<figcaption>Figure 19: Bayesian Skyline Reconstruction</figcaption>
+	<figcaption>Figure 19: Bayesian Skyline Reconstruction in Tracer</figcaption>
 </figure>
 <br>
 
@@ -441,7 +441,7 @@ the median and 95% HPD intervals are plotted. After selecting the
 
 <figure>
 	<a name="fig:tracerBSP3"></a>
-	<img style="width:80.0%;" src="figures/tracerBSP2.png" alt="">
+	<img style="width:80.0%;" src="figures/tracerBSP3.png" alt="">
 	<figcaption>Figure 20: Bayesian Skyline Reconstruction</figcaption>
 </figure>
 <br>
