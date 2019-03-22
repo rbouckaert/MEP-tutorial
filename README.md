@@ -76,7 +76,7 @@ frame 3` from the drop-down menu (Figure \[fig:BEAUti\_split\]).
 This signifies that the first full codon starts at the third nucleotide
 in the alignment. This will create three rows in the partitions panel.
 You will have to re-link the tree and clock models across the three
-partitions (and name them “tree` and “clock` respectively) before
+partitions (and name them `tree` and `clock` respectively) before
 continuing to the next step. The partition panel should now look
 something like this:
 
@@ -108,9 +108,9 @@ Clicking this will make a dialog box appear.
 <br>
 
 Select the option to `use everything`, choose `after last` from from
-drop-down box and type‘s’ into the corresponding text box. This will
+drop-down box and type `s` into the corresponding text box. This will
 extract the trailing numbers from the taxon names after the last little
-’s’, which are interpreted as the year (in this case since 1900) that
+`s`, which are interpreted as the year (in this case since 1900) that
 the sample was isolated.
 
 The dates panel should now look something like this:
@@ -128,7 +128,7 @@ We will use the HKY model with empirical base frequencies for all three
 partitions. To do this first link the site partitions and then choose
 HKY and Empirical from the Subst Model and Frequencies drop-boxes. Also
 check the estimate box for the Mutation Rate,which will finally trigger
-to check the “Fix mean mutation rate` box.
+to check the `Fix mean mutation rate` box.
 
 <figure>
 	<a name="fig:BEAUti\_Site\_Model"></a>
@@ -137,7 +137,7 @@ to check the “Fix mean mutation rate` box.
 </figure>
 <br>
 
-Then, hold ‘shift’ key to select all site models on the left side, and
+Then, hold `shift` key to select all site models on the left side, and
 click `OK` to clone the setting from defined site model (Figure
 \[fig:cloneFrom\]). Go through each site model, as you can see, their
 configurations are same now.
@@ -152,8 +152,8 @@ configurations are same now.
 
 ### Priors 
 
-To set up the priors, select the `Priors` tab. Choose `Coalescent
-Constant Population` for the tree prior. Set the prior on the clockRate
+To set up the priors, select the `Priors` tab. Choose `Coalescent Constant Population` 
+for the tree prior. Set the prior on the clockRate
 parameter to a log-normal with `M=-5` and `S=1.25`.
 
 <figure>
@@ -165,10 +165,10 @@ parameter to a log-normal with `M=-5` and `S=1.25`.
 
 ## Setting the MCMC options
 
-For this dataset let’s initially set the chain length to as this will
+For this dataset let’s initially set the chain length to `2000000` as this will
 run reasonably quickly on most modern computers. Set the sampling
-frequencies for the screen to to , the trace log file to and the trees
-file to .
+frequencies for the screen to `10000`, the trace log file to `400` and the trees
+file to `400`.
 
 <figure>
 	<a name="fig:BEAUti\_mcmc"></a>
@@ -269,7 +269,7 @@ of correlated samples and thus may not represent the posterior
 distribution well. In the bottom right of the window is a frequency plot
 of the samples which is expected given the low ESSs is extremely rough.
 
-If we select the tab on the right-hand-side labelled ‘Trace’ we can view
+If we select the tab on the right-hand-side labelled `Trace` we can view
 the raw trace, that is, the sampled values against the step in the MCMC
 chain.
 
@@ -281,7 +281,7 @@ chain.
 <br>
 
 Here you can see how the samples are correlated. There are 5000 samples
-in the trace (we ran the MCMC for steps sampling every ) but adjacent
+in the trace (we ran the MCMC for steps sampling every 400) but adjacent
 samples often tend to have similar values. The ESS for the absolute rate
 of evolution (clockRate) is about 62 so we are only getting 1
 independent sample to every `81=5000/62` actual samples). With a short
@@ -293,7 +293,7 @@ The simple response to this situation is that we need to run the chain
 for longer. Given the lowest ESS (for the constant coalescent) is
 `44`, it would suggest that we have to run the chain for at least
 5 times the length to get reasonable ESSs that are `>200`. So let’s go
-for a chain length of and log every . Go back to the `MCMC`
+for a chain length of 10000000 and log every 2000. Go back to the `MCMC`
 options section in BEAUti, and create a new BEAST XML file with a longer
 chain length. Now run BEAST and load the new log file into Tracer (you
 can leave the old one loaded for comparison).
@@ -349,14 +349,14 @@ overlaid:
 </figure>
 <br>
 
-## Summarizing the trees {#summarizing-the-trees .unnumbered}
+## Summarising the trees {#summarizing-the-trees .unnumbered}
 
-Use the program TreeAnnotator to summarize the tree and view the results
+Use the program TreeAnnotator to summarise the tree and view the results
 in Figtree (Figure \[fig:RSV2tree\]).
 
 <figure>
 	<a name="fig:RSV2tree"></a>
-	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.pdf" alt="">
+	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.png" alt="">
 	<figcaption>Figure 14: The Maximum clade credibility tree for the G gene of 129 RSVA-2 viral samples.</figcaption>
 </figure>
 <br>
@@ -366,7 +366,7 @@ canal tree represents maximum clade credibility tree.
 
 <figure>
 	<a name="fig:RSV2tree"></a>
-	<img style="width:80.0%;" src="figures/DensiTree.pdf" alt="">
+	<img style="width:80.0%;" src="figures/DensiTree.png" alt="">
 	<figcaption>Figure 15: The posterior tree set visualised in DensiTree.</figcaption>
 </figure>
 <br>
@@ -383,7 +383,7 @@ We can reconstruct the population history using the Bayesian Skyline
 plot. In order to do so, load the XML file into BEAUti, select the
 priors-tab and change the tree prior from coalescent with constant
 population size to coalescent with Bayesian skyline. Note that an extra
-item is added to the priors called ‘Markov chained population sizes’
+item is added to the priors called `Markov chained population sizes`
 which is a prior that ensures dependence between population sizes.
 
 <figure>
@@ -420,7 +420,7 @@ the menu Analysis/Bayesian Skyline Reconstruction.
 <figure>
 	<a name="fig:tracerBSP1"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP1.png" alt="">
-	<figcaption>Figure 18: Bayesian Skyline Reconstruction in BEAUti</figcaption>
+	<figcaption>Figure 18: Bayesian Skyline Reconstruction in Tracer</figcaption>
 </figure>
 <br>
 
@@ -431,7 +431,7 @@ entry for age of youngest tip to 2002.
 <figure>
 	<a name="fig:tracerBSP2"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP2.png" alt="">
-	<figcaption>Figure 19: Bayesian Skyline Reconstruction in Tracer</figcaption>
+	<figcaption>Figure 19: Bayesian Skyline Reconstruction dialog in Tracer</figcaption>
 </figure>
 <br>
 
