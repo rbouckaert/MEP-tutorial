@@ -355,23 +355,34 @@ overlaid:
 
 ## Summarising the trees 
 
-Use the program TreeAnnotator to summarise the tree and view the results
-in Figtree (Figure \[fig:RSV2tree\]).
+Use the program TreeAnnotator to summarise the tree. TreeAnnotator is an application that
+comes with BEAST.
 
 <figure>
 	<a name="fig:RSV2tree"></a>
 	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.png" alt="">
-	<figcaption>Figure 14: The Maximum clade credibility tree for the G gene of 129 RSVA-2 viral samples.</figcaption>
+	<figcaption>Figure 14: TreeAnnotator for creating a summary tree from a posterior tree set.</figcaption>
 </figure>
 <br>
 
-DensiTree with clade height bars for clades with over 50% support. Root
+
+Summary trees can be viewed using FigTree (a program separate from BEAST) and 
+DensiTree (distributed with BEAST).
+
+<figure>
+	<a name="fig:RSV2tree"></a>
+	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.png" alt="">
+	<figcaption>Figure 15: The Maximum clade credibility tree for the G gene of 129 RSVA-2 viral samples.</figcaption>
+</figure>
+<br>
+
+Below a DensiTree with clade height bars for clades with over 50% support. Root
 canal tree represents maximum clade credibility tree.
 
 <figure>
 	<a name="fig:RSV2tree"></a>
 	<img style="width:80.0%;" src="figures/DensiTree.png" alt="">
-	<figcaption>Figure 15: The posterior tree set visualised in DensiTree.</figcaption>
+	<figcaption>Figure 16: The posterior tree set visualised in DensiTree.</figcaption>
 </figure>
 <br>
 
@@ -393,7 +404,7 @@ which is a prior that ensures dependence between population sizes.
 <figure>
 	<a name="fig:BEAUti\_priors2"></a>
 	<img style="width:80.0%;" src="figures/BEAUti_priors2.png" alt="">
-	<figcaption>Figure 16: Priors</figcaption>
+	<figcaption>Figure 17: Priors</figcaption>
 </figure>
 <br>
 
@@ -410,7 +421,7 @@ number of changes, so it could be used as an alternative tree prior.
 <figure>
 	<a name="fig:BEAUti\_init"></a>
 	<img style="width:80.0%;" src="figures/BEAUti_init.png" alt="">
-	<figcaption>Figure 17: Initialization panel</figcaption>
+	<figcaption>Figure 18: Initialization panel</figcaption>
 </figure>
 <br>
 
@@ -426,7 +437,7 @@ the menu Analysis/Bayesian Skyline Reconstruction.
 <figure>
 	<a name="fig:tracerBSP1"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP1.png" alt="">
-	<figcaption>Figure 18: Bayesian Skyline Reconstruction in Tracer</figcaption>
+	<figcaption>Figure 19: Bayesian Skyline Reconstruction in Tracer</figcaption>
 </figure>
 <br>
 
@@ -437,7 +448,7 @@ entry for age of youngest tip to 2002.
 <figure>
 	<a name="fig:tracerBSP2"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP2.png" alt="">
-	<figcaption>Figure 19: Bayesian Skyline Reconstruction dialog in Tracer</figcaption>
+	<figcaption>Figure 20: Bayesian Skyline Reconstruction dialog in Tracer</figcaption>
 </figure>
 <br>
 
@@ -448,7 +459,7 @@ the median and 95% HPD intervals are plotted. After selecting the
 <figure>
 	<a name="fig:tracerBSP3"></a>
 	<img style="width:80.0%;" src="figures/tracerBSP3.png" alt="">
-	<figcaption>Figure 20: Bayesian Skyline Reconstruction</figcaption>
+	<figcaption>Figure 21: Bayesian Skyline Reconstruction</figcaption>
 </figure>
 <br>
 
