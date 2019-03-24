@@ -359,8 +359,8 @@ Use the program TreeAnnotator to summarise the tree. TreeAnnotator is an applica
 comes with BEAST.
 
 <figure>
-	<a name="fig:RSV2tree"></a>
-	<img style="width:80.0%;" src="figures/RSV2_mcc_tree.png" alt="">
+	<a name="fig:treeannotator"></a>
+	<img style="width:80.0%;" src="figures/treeannotator.png" alt="">
 	<figcaption>Figure 14: TreeAnnotator for creating a summary tree from a posterior tree set.</figcaption>
 </figure>
 <br>
