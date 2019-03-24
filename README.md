@@ -49,7 +49,7 @@ The following software will be used in this tutorial:
     the time of writing, the current version is v`1.4.3`. It is
     available for download from [http://beast.community/figtree](http://beast.community/figtree).
 
-## The NEXUS alignment {#the-nexus-alignment .unnumbered}
+## The NEXUS alignment
 
 The data is in a file called
 [RSV2.nex](https://github.com/CompEvol/beast2/blob/master/examples/nexus/RSV2.nex?raw=true).
@@ -87,7 +87,7 @@ something like this:
 </figure>
 <br>
 
-## Tip dates {#tip-dates .unnumbered}
+## Tip dates 
 
 By default all the taxa are assumed to have a date of zero (i.e. the
 sequences are assumed to be sampled at the same time). In this case, the
@@ -122,7 +122,7 @@ The dates panel should now look something like this:
 </figure>
 <br>
 
-## Setting the substitution model {#setting-the-substitution-model .unnumbered}
+## Setting the substitution model 
 
 We will use the HKY model with empirical base frequencies for all three
 partitions. To do this first link the site partitions and then choose
@@ -181,7 +181,7 @@ file to `400`.
 </figure>
 <br>
 
-## Running BEAST {#running-beast .unnumbered}
+## Running BEAST 
 
 Save the BEAST file (e.g. `RSV2.xml`) and run it in BEAST.
 
@@ -264,7 +264,7 @@ Total calculation time: 106.096 seconds
 End likelihood: -6102.669168760964
 ```
 
-## Analysing the BEAST output {#analysing-the-beast-output .unnumbered}
+## Analysing the BEAST output 
 
 Note that the effective sample sizes (ESSs) for many of the logged
 quantities are small (ESSs less than 100 will be highlighted in red by
@@ -353,7 +353,7 @@ overlaid:
 </figure>
 <br>
 
-## Summarising the trees {#summarizing-the-trees .unnumbered}
+## Summarising the trees 
 
 Use the program TreeAnnotator to summarise the tree and view the results
 in Figtree (Figure \[fig:RSV2tree\]).
@@ -376,12 +376,12 @@ canal tree represents maximum clade credibility tree.
 <br>
 
 
-## Questions {#questions .unnumbered}
+## Questions 
 
 > In what year did the common ancestor of all RSVA viruses sampled live?
 > What is the 95% HPD?
 
-## Bonus section: Bayesian Skyline plot {#bonus-section-bayesian-skyline-plot .unnumbered}
+## Bonus section: Bayesian Skyline plot 
 
 We can reconstruct the population history using the Bayesian Skyline
 plot. In order to do so, load the XML file into BEAUti, select the
@@ -452,7 +452,7 @@ the median and 95% HPD intervals are plotted. After selecting the
 </figure>
 <br>
 
-## Questions {#questions-1 .unnumbered}
+## Questions 
 
 >
 >1.  By what amount did the effective population size of RSVA grow from
